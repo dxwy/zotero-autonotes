@@ -19,70 +19,70 @@ function example(
   return descriptor;
 }
 
-// export class BasicExampleFactory {
-//   @example
-//   static registerNotifier() {
-//     const callback = {
-//       notify: async (
-//         event: string,
-//         type: string,
-//         ids: Array<string>,
-//         extraData: { [key: string]: any }
-//       ) => {
-//         if (!addon?.data.alive) {
-//           this.unregisterNotifier(notifierID);
-//           return;
-//         }
-//         addon.hooks.onNotify(event, type, ids, extraData);
-//       },
-//     };
+export class BasicExampleFactory {
+  @example
+  // static registerNotifier() {
+  //   const callback = {
+  //     notify: async(
+  //       event: string,
+  //       type: string,
+  //       ids: Array<string>,
+  //       extraData: { [key: string]: any }
+  //     ) => {
+  //       if (!addon?.data.alive) {
+  //         this.unregisterNotifier(notifierID);
+  //         return;
+  //       }
+  //       addon.hooks.onNotify(event, type, ids, extraData);
+  //     },
+  //   };
 
-//     // Register the callback in Zotero as an item observer
-//     const notifierID = Zotero.Notifier.registerObserver(callback, [
-//       "tab",
-//       "item",
-//       "file",
-//     ]);
+  //   // Register the callback in Zotero as an item observer
+  //   const notifierID = Zotero.Notifier.registerObserver(callback, [
+  //     "tab",
+  //     "item",
+  //     "file",
+  //   ]);
 
-//     // Unregister callback when the window closes (important to avoid a memory leak)
-//     window.addEventListener(
-//       "unload",
-//       (e: Event) => {
-//         this.unregisterNotifier(notifierID);
-//       },
-//       false
-//     );
-//   }
+  //   // Unregister callback when the window closes (important to avoid a memory leak)
+  //   window.addEventListener(
+  //     "unload",
+  //     (e: Event) => {
+  //       this.unregisterNotifier(notifierID);
+  //     },
+  //     false
+  //   );
+  // }
 
-//   @example
-//   static exampleNotifierCallback() {
-//     new ztoolkit.ProgressWindow(config.addonName)
-//       .createLine({
-//         text: "Open Tab Detected!",
-//         type: "success",
-//         progress: 100,
-//       })
-//       .show();
-//   }
+  @example
+  static exampleNotifierCallback() {
+    new ztoolkit.ProgressWindow(config.addonName)
+      .createLine({
+        text: "Open Tab Detected!",
+        type: "success",
+        progress: 100,
+      })
+      .show();
+  }
 
-//   @example
-//   private static unregisterNotifier(notifierID: string) {
-//     Zotero.Notifier.unregisterObserver(notifierID);
-//   }
+  @example
+  private static unregisterNotifier(notifierID: string) {
+    Zotero.Notifier.unregisterObserver(notifierID);
+  }
 
-//   @example
-//   static registerPrefs() {
-//     const prefOptions = {
-//       pluginID: config.addonID,
-//       src: rootURI + "chrome/content/preferences.xhtml",
-//       label: getString("prefs.title"),
-//       image: `chrome://${config.addonRef}/content/icons/favicon.png`,
-//       extraDTD: [`chrome://${config.addonRef}/locale/overlay.dtd`],
-//       defaultXUL: true,
-//     };
-//     ztoolkit.PreferencePane.register(prefOptions);
-//   }
-// }
+  @example
+  static registerPrefs() {
+    const prefOptions = {
+      pluginID: config.addonID,
+      src: rootURI + "chrome/content/preferences.xhtml",
+      label: getString("prefs.title"),
+      image: `chrome://${config.addonRef}/content/icons/favicon.png`,
+      extraDTD: [`chrome://${config.addonRef}/locale/overlay.dtd`],
+      defaultXUL: true,
+    };
+    ztoolkit.PreferencePane.register(prefOptions);
+  }
+}
 
 export class KeyExampleFactory {
   @example

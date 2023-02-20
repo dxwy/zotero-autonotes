@@ -1,5 +1,5 @@
 import {
-  // BasicExampleFactory,
+  BasicExampleFactory,
   HelperExampleFactory,
   KeyExampleFactory,
   PromptExampleFactory,
@@ -32,7 +32,7 @@ async function onStartup() {
     })
     .show();
 
-  // BasicExampleFactory.registerPrefs();
+  BasicExampleFactory.registerPrefs();
 
   // BasicExampleFactory.registerNotifier();
 

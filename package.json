@@ -30,7 +30,7 @@
     "type": "git",
     "url": "git+https://github.com/dxwy/zotero-autonotes.git"
   },
-  "author": "windingwind",
+  "author": "dxwy",
   "license": "AGPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/dxwy/zotero-autonotes/issues"
@@ -48,7 +48,7 @@
     "minimist": "^1.2.7",
     "release-it": "^15.6.0",
     "replace-in-file": "^6.3.5",
-    "typescript": "^4.9.4",
+    "typescript": "^4.9.5",
     "zotero-types": "^1.0.11"
   }
 }
