@@ -1,14 +1,14 @@
 {
   "name": "zotero-autonotes",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Zotero auto notes",
   "config": {
     "addonName": "zotero-autonotes",
     "addonID": "zotero-autonotes@dxwy.com",
     "addonRef": "autonotes",
     "addonInstance": "AutoNotes",
-    "releasepage": "https://github.com/dxwy/zotero-addon-template/releases/latest/download/zotero-addon-template.xpi",
-    "updaterdf": "https://raw.githubusercontent.com/dxwy/zotero-addon-template/bootstrap/update.json"
+    "releasepage": "https://github.com/dxwy/zotero-autonotes/releases/latest/download/zotero-autonotes.xpi",
+    "updaterdf": "https://raw.githubusercontent.com/dxwy/zotero-autonotes/bootstrap/update.json"
   },
   "main": "src/index.ts",
   "scripts": {
@@ -28,14 +28,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/windingwind/zotero-addon-template.git"
+    "url": "git+https://github.com/dxwy/zotero-autonotes.git"
   },
   "author": "windingwind",
   "license": "AGPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/windingwind/zotero-addon-template/issues"
+    "url": "https://github.com/dxwy/zotero-autonotes/issues"
   },
-  "homepage": "https://github.com/windingwind/zotero-addon-template#readme",
+  "homepage": "https://github.com/dxwy/zotero-autonotes#readme",
   "dependencies": {
     "zotero-plugin-toolkit": "^2.0.1"
   },
