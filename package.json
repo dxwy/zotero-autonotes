@@ -1,6 +1,6 @@
 {
   "name": "zotero-autonotes",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Zotero auto notes",
   "config": {
     "addonName": "zotero-autonotes",

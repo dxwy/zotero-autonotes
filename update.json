@@ -3,7 +3,7 @@
     "zotero-autonotes@dxwy.com": {
       "updates": [
         {
-          "version": "0.0.4",
+          "version": "0.0.5",
           "update_link": "https://github.com/dxwy/zotero-autonotes/releases/latest/download/zotero-autonotes.xpi",
           "applications": {
             "gecko": {
@@ -12,7 +12,7 @@
           }
         },
         {
-          "version": "0.0.4",
+          "version": "0.0.5",
           "update_link": "https://github.com/dxwy/zotero-autonotes/releases/latest/download/zotero-autonotes.xpi",
           "applications": {
             "zotero": {
