@@ -1,5 +1,5 @@
 import {
-  BasicExampleFactory,
+  // BasicExampleFactory,
   HelperExampleFactory,
   KeyExampleFactory,
   PromptExampleFactory,
@@ -32,9 +32,9 @@ async function onStartup() {
     })
     .show();
 
-  BasicExampleFactory.registerPrefs();
+  // BasicExampleFactory.registerPrefs();
 
-  BasicExampleFactory.registerNotifier();
+  // BasicExampleFactory.registerNotifier();
 
   KeyExampleFactory.registerShortcuts();
 
@@ -101,7 +101,7 @@ async function onNotify(
     type == "tab" &&
     extraData[ids[0]].type == "reader"
   ) {
-    BasicExampleFactory.exampleNotifierCallback();
+    // BasicExampleFactory.exampleNotifierCallback();
   } else {
     return;
   }
